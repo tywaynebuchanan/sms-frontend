@@ -1,0 +1,189 @@
+main {
+  vertical-align: center;
+  margin-top: 10rem;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5rem 4rem 5rem 4rem !important;
+}
+.addStudentContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 4rem 5rem 4rem !important;
+}
+.notification {
+  padding: 0.75rem !important;
+}
+
+.box {
+  border-radius: 20px !important;
+}
+
+.dashcontainer {
+  width: 100%;
+  display: grid;
+  max-width: max-content;
+  grid-template-columns: 4fr 1fr;
+  gap: 100px;
+}
+
+table tbody tr {
+  cursor: pointer;
+}
+
+
+.PhoneInputInput{
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+    border-color: #b5b5b5;
+}
+
+span .is-right{
+  cursor: pointer;
+}
+
+.navbar-item img {
+  max-height: 8rem !important;
+}
+
+.control.has-icons-right .icon{
+  pointer-events: all !important;
+}
+
+.profileContainer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-image{
+  flex: 1;
+  height: max-content;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+
+
+}
+
+.profile-content{
+  flex: 3;
+  height: max-content;
+}
+
+input[disabled]{
+  background-color: white !important;
+  border-color: #f5f5f5 !important; 
+  box-shadow: none;
+  color: #0D0106 !important;
+  cursor:  pointer !important;
+}
+
+.profile-image .title:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
+.step{
+  display: grid;
+  place-items: center;
+}
+
+.fa-home:before, .fa-house:before {
+    content: "\f015";
+    padding-right: 10px;
+}
+
+
+
+@media screen and (max-width: 400px){
+
+  .dashcontainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .profileContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .profile-image{
+    height: max-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  
+  
+  }
+
+  .profile-content{
+    height: max-content;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.75rem;
+  }
+
+  .profile-content label{
+    font-size: 1rem;
+  }
+
+
+  .profile-content input i{
+    font-size: 0.5rem;
+  }
+
+  .box{
+    padding: 1rem !important;
+  }
+
+  .px-6{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+
+p.title{
+  color: #363636;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center !important;
+
+}
+
+.profile-image p.title{
+  color: #363636;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center !important;
+
+}
+
+
+}
