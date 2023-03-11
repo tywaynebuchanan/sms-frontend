@@ -2,9 +2,19 @@ import {Link, useLocation} from 'react-router-dom'
 import moment from "moment"
 import React from "react"
 import NewButtons from './NewButtons'
+import {ProgressBar} from 'react-loader-spinner'
 
-const Table = ({getdata,smessages})=>{
+const Table = ({getdata,smessages,loading})=>{
 
+const progressdata = {
+  height:"80",
+  width:"80",
+  ariaLabel:"progress-bar-loading",
+
+  wrapperClass:"progress-bar-wrapper",
+  borderColor:'#3F8ED0',
+  barColor:'#3F8ED0'
+}
   if(getdata.length < 1 ){
     return <section className='section container'>
             <div className="notification is-white">
@@ -15,7 +25,7 @@ const Table = ({getdata,smessages})=>{
 
 
   return <div className="container p-6">
-    <table className = "table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+  { loading ?  <ProgressBar progressdata/> : <table className = "table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead className="has-text-centered">
         <tr>
           <th>Student Id</th>
@@ -56,7 +66,8 @@ const Table = ({getdata,smessages})=>{
             </tr>
             ))}
           </tbody>
-    </table> 
+    </table>  }
+    
 </div>
 
 

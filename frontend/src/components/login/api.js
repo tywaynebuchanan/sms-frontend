@@ -1,6 +1,6 @@
 import axios from "axios"
 export const api = axios.create({
-    baseURL: "https://myauthapivone.herokuapp.com/api",
+    baseURL: "http://localhost:5000/api",
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",

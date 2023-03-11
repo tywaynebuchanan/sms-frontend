@@ -17,7 +17,7 @@ const PasswordInput = ({placeholder,className,onChange,values,errors,touched})=>
           <span className="icon is-small is-left">
             <i className={`fas fa-${className}`}></i>
           </span>
-          <span class="icon is-small is-right"  onClick={()=>setEye(!eye)}>
+          <span className="icon is-small is-right"  onClick={()=>setEye(!eye)}>
              <i className={eye ? "fas fa-eye-slash" : "fas fa-eye"}></i>
           </span>
         </p>

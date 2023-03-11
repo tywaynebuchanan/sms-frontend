@@ -58,7 +58,7 @@ const AppProvider = ({children}) => {
       try{
       const data = await api.get(URL)
       if(data.data.student){
-        localStorage.setItem("studentdata",JSON.stringify(data.data.student))
+        // localStorage.setItem("studentdata",JSON.stringify(data.data.student))
         setData(data.data.student)
         console.log(data)
       }else{
@@ -101,6 +101,7 @@ const AppProvider = ({children}) => {
   const handleLogout = async () => {
     signOut();
     toast.success("You have been logged out",toastData)
+    // localStorage.removeItem("studentdata")
     nagivate("/")
   }
 

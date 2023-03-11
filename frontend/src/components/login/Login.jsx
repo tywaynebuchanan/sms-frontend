@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom"
 import React, { Fragment } from "react"
 import {useFormik} from "formik"
 import { loginSchema } from "../schemas"
-import {api} from './api'
+import {api} from "./api"
 import {toast} from "react-toastify"
 import "./login.css"
 

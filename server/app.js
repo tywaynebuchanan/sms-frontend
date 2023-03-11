@@ -42,6 +42,7 @@ app.use(morgan("common"))
 app.use(cors())
 app.use("/assets",express.static(path.join(__dirname,'public/assets')))
 
+
 /* Storage */
 
 const storage = multer.diskStorage({
@@ -59,6 +60,7 @@ const upload = multer({storage})
 app.get("/",(req,res)=>{
     res.send("Hello from the server");
 })
+
 
 app.get("/ping",(req,res)=>{
     res.send("Api is Live")

@@ -25,7 +25,7 @@ const EmailInput = ({type,placeholder,className,values,onChange,onBlur,errors,to
               <i className="fas fa-check"></i>
           </span> : ""}
         </p>
-        {errors.email && touched ? <p class="help is-danger">{errors.email}</p> : ""}
+        {errors.email && touched ? <p className="help is-danger">{errors.email}</p> : ""}
       </div>
   )
 }
